@@ -1,0 +1,29 @@
+header {
+	  background-color: #ddd;
+}
+
+nav {
+	 display: flex;
+	 justify-content: space-around;
+	 text-transform: capitalize;
+	 padding: .8rem;
+}
+
+nav a{
+	 text-decoration: none;
+}
+
+nav .logo {
+	  text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+nav ul li{
+	  list-style: none;
+}
+
