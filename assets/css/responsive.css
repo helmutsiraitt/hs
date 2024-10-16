@@ -1,0 +1,12 @@
+/* Mobile Devices (Potrait and landscape) */
+@media( width >= 767px){
+/* Navigation */
+    nav ul{
+        display: flex; 
+    }
+
+    .hamburger-container {
+         display: none;
+    }
+
+}

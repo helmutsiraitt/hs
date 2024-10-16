@@ -1,5 +1,6 @@
 @import url('reset.css');
 @import url('header.css');
+@import url('responsive.css');
 
 body {
 	  font: 1rem/1.5 sans-serif;
