@@ -1,0 +1,25 @@
+section.about {
+	 display: flex;
+	 justify-content: flex-start;
+	 align-items: center;
+	 column-gap: 10px;
+	 height: 50vh;
+	   border: 1px solid black;
+	   padding-left: 1rem;
+
+}
+
+.about h2 {
+	   text-transform: capitalize;
+	   border: 1px solid black;
+	   align-self: flex-start;
+	   font-size: 1.5rem;
+      
+}
+
+.about p {
+	   border: 1px solid black;
+       width: 60%;
+	   align-self: flex-start;
+
+}

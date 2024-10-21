@@ -8,5 +8,8 @@
     .hamburger-container {
          display: none;
     }
-
+/* Hero Section */
+    .hero {
+        align-items: flex-start;
+    }
 }

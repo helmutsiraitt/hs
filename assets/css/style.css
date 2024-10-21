@@ -1,8 +1,13 @@
 @import url('reset.css');
 @import url('header.css');
+@import url('about.css');
 @import url('responsive.css');
 
 body {
 	  font: 1rem/1.5 sans-serif;
 	  background-color: #ddd;
+}
+
+section{
+	  height: 100vh;
 }
