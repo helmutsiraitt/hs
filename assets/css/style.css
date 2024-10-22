@@ -1,13 +1,17 @@
 @import url('reset.css');
 @import url('header.css');
 @import url('about.css');
+@import url('skills.css');
+@import url('font.css');
 @import url('responsive.css');
 
 body {
-	  font: 1rem/1.5 sans-serif;
-	  background-color: #ddd;
+	  font: 1rem/1.5 'Space Grotesk', arial, sans-serif;
+	  background-color: #fbfbfb;
+	   font-weight: normal;
 }
 
 section{
 	  height: 100vh;
 }
+

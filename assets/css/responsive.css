@@ -1,3 +1,49 @@
+
+/*
+/* Mobile Devices (potrait and landscape) */
+/*@media only screen and ( max-width: 767px ) {
+
+}*/
+
+/* Tablet Devices (potrait and landscape) */
+/*@media only screen and ( min-width: 768px ) and ( max-width: 1023px ) {
+
+}*/
+
+/* Laptop Devices (potrait and landscape) */
+/*@media only screen and ( min-width: 1024px ) and ( max-width: 1439px ) {
+
+}*/
+
+/* Dekstop Devices (potrait and landscape) */
+/*@media only screen and ( min-width: 1440px ) {
+
+}*/
+  
+
+/* Dekstop Devices (potrait and landscape) */
+@media( width >= 1440px ) {
+
+}  
+
+
+/* Laptop Devices (potrait and landscape) */
+@media( 1024px <= width <= 1439 ) {
+
+}
+
+
+
+/* Tablet Devices (potrait and landscape) */
+@media( 768px <= width <= 1023px ) {
+    /*  Navigation  */
+    nav ul {
+          width: 35%;
+    }  
+}
+
+
+
 /* Mobile Devices (Potrait and landscape) */
 @media( width >= 767px){
 /* Navigation */

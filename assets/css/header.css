@@ -1,9 +1,6 @@
-header {
-	  background-color: #ddd;
-}
 /* navigation */
 nav {
-	 border: 1px solid black;
+/*	 border: 1px solid black;*/
 	 display: flex;
 	 justify-content: space-around;
 	 text-transform: capitalize;
@@ -15,6 +12,7 @@ nav a{
 }
 
 nav .logo {
+    font-family: 'kioshima';
 	  text-transform: uppercase;
 }
 
@@ -22,6 +20,8 @@ nav ul {
     display: none;
     justify-content: space-around;
     width: 30%;
+     font-family: 'Space Grotesk';
+     font-weight: 500;
 }
 
 nav ul li{
@@ -84,13 +84,24 @@ nav ul li{
 
 /* hero */
 .hero {
-	 border: 1px solid black;
 	 height:100vh;
 	 display: flex;
 	 flex-direction: column;
 	 align-items: center;
 	 justify-content: center;
 	 padding: 1rem;
+	 background-image: url('../images/bg/9.png');
+	 background-size: 100% 100%;
+	 background-repeat: no-repeat;
+}
+
+.hero-content {
+/*	   border: 1px solid black;*/
+	   width: 900px;
+	   max-width: 90%;
+	   margin: auto;
+	   padding: 1rem;
+
 }
 
 .hero h1, 
@@ -102,6 +113,9 @@ nav ul li{
 .hero h1 {
 	 font-size: clamp(2rem, 5vw, 4rem);
 	 text-transform: capitalize;
+	 inherits: none;
+	  font-family: 'Space Grotesk';
+	    font-weight: 500;
 } 
 
 .hero p {
