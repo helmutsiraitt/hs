@@ -3,37 +3,103 @@ section.skills {
 	  flex-direction: column;
 	  justify-content: center;
 	  align-items: center;
-	   padding-left: 1rem;
-	   
+	  padding-left: 1rem;
+	  gap: 10px;
+/*	  border: 1px solid black;*/
 }
 
 .skills h2 {
 	   text-transform: capitalize;
 	   font-size: 1.5rem;
+/*	   border: 1px solid black;*/
+	   width: 600px;
+	  max-width: 90%;
+	  text-align: center;
+	  font-family: 'Space Grotesk';
+	  font-weight: 500;
+	  font-variant: small-caps;
 } 
+
+.skills p {
+	  width: 900px;
+	  max-width: 90%;
+}
 
 
 .skill-container {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: space-around;
 	gap: 10px;
-	  width: 900px;
-	 max-width: 90%;
+	width: 900px;
+	max-width: 90%;
+	height: 50%;
+/*	border: 1px solid blue;*/
 }
 
 .basic, 
 .design,
-.framework {
+.framework,
+.extra {
 	 display: inline-flex;
 	 gap: 10px;
+	 justify-content: space-around;
+	 width: 100%;
+	 position: relative;
+
+/*	 border: 1px solid black;*/
+}
+
+.basic h3,
+.framework h3,
+.design h3,
+.extra h3{
+     position: absolute;
+     bottom: 50px;
+      font-weight: 500;
 }
 
 .thumb{
-	 padding: 1rem 2rem;
-	 border:1px solid black ;
-	 
-/*	 background-color: lightblue;*/
+	 padding: .5rem .5rem;
+/*	 border:1px solid black ;*/
+	 border-radius: 50%;
+	 background-color: white;
+	 position: relative;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
 }
 
+.thumb img {
+	 position: relative;
+	 z-index: 2;
+}
 
+.thumb span {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 50%;
+	transform: translateX(50%);
+	visibility: hidden;
+	opacity: 0;
+	transition: all .3s ease
+}
+
+.thumb span:after {
+	position: absolute;
+	content: '';
+	border-top: 5px solid #333;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	bottom: 100%;
+	right: 50%;
+	transform: translateX(50%);
+}
+
+.thumb img:hover + span {
+	visibility: visible;
+	opacity: 1;
+	bottom: -30px;
+}

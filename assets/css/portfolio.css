@@ -1,0 +1,23 @@
+section.portfolio {
+	 border: 1px solid black;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+}
+
+.portfolio h2 {
+	text-transform: capitalize;
+	 width: 900px;
+	 max-width: 90%;
+	 font-family: 'Space Grotesk';
+	 font-weight: 500;
+	 font-variant: small-caps;
+}
+
+.portfolio-container {
+	 width: 900px;
+	 max-width: 90%;
+	 border: 1px solid black;
+
+}

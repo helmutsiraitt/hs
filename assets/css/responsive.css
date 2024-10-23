@@ -58,4 +58,44 @@
     .hero {
         align-items: flex-start;
     }
+
+    .hero-content {
+          align-items: flex-start;   
+         
+    }
+
+/*  About  */
+  section.about {
+     height: 100vh;
+}
+
+.about h2 {
+         text-align: left;
+}
+   .about-content {
+         flex-direction: row;   
+
+   }
+   .thumb-profile {
+      align-items: center;
+}
+
+   .thumb-profile img {
+      aspect-ratio: 1 / 1;
+  }
+
+  .about p {
+        width: 30ch;
+ }
+
+/* skills  */
+  .skills h2 {
+      text-align: center;     
+ } 
+
+ .skill-container {
+    flex-direction: row;
+}
+
+
 }

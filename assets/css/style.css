@@ -3,6 +3,7 @@
 @import url('about.css');
 @import url('skills.css');
 @import url('font.css');
+@import url('portfolio.css');
 @import url('responsive.css');
 
 body {
@@ -13,5 +14,23 @@ body {
 
 section{
 	  height: 100vh;
+/*	  border: 1px solid black;*/
 }
 
+.btn {
+	/*border: 0;
+	outline: 0;
+	font-family: sans-serif;*/
+	all: unset;
+	background-color: #337ab7;
+	color: #fff;
+	padding: 8px;
+	border-radius: 5px;
+	margin-left: 10px;
+	font-size: ;
+}
+
+.btn:hover {
+	  cursor: pointer;
+	  background-color: #2e6da4;
+} 
