@@ -4,6 +4,7 @@
 @import url('skills.css');
 @import url('font.css');
 @import url('portfolio.css');
+@import url('blog.css');
 @import url('responsive.css');
 
 body {
@@ -24,13 +25,18 @@ section{
 	all: unset;
 	background-color: #337ab7;
 	color: #fff;
-	padding: 8px;
+	padding: .4rem;
 	border-radius: 5px;
 	margin-left: 10px;
-	font-size: ;
 }
 
 .btn:hover {
 	  cursor: pointer;
 	  background-color: #2e6da4;
 } 
+
+.btn-small {
+	 padding: .3rem;
+	 font-size: .8em;
+}
+

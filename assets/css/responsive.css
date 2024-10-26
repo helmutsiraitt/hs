@@ -96,6 +96,26 @@
  .skill-container {
     flex-direction: row;
 }
+/* portfolio */
+section.portfolio {
+     height: 100vh;
+}
 
+.portfolio h2 {
+     text-align: left;
+}
+
+
+
+.portfolio-container {
+     justify-content: space-between;
+     flex-wrap: wrap;
+     flex-direction: row;
+  }
+
+  .project {
+    text-align: center;
+    width: 30%;
+}
 
 }

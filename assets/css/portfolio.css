@@ -1,23 +1,57 @@
 section.portfolio {
-	 border: 1px solid black;
 	 display: flex;
 	 flex-direction: column;
 	 justify-content: center;
 	 align-items: center;
+	 height: auto;
 }
 
 .portfolio h2 {
-	text-transform: capitalize;
+	 text-transform: capitalize;
 	 width: 900px;
 	 max-width: 90%;
 	 font-family: 'Space Grotesk';
 	 font-weight: 500;
 	 font-variant: small-caps;
+	 text-align: center;
 }
 
 .portfolio-container {
 	 width: 900px;
 	 max-width: 90%;
-	 border: 1px solid black;
+	 flex-direction: column;
+/*	 border: 1px solid black;*/
+	 display: flex;
+/*	 justify-content: space-between;*/
+	 flex-wrap: wrap;
+	 row-gap: 5px;
+}
 
+.project {
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	border-radius: 1em;
+	border: 5px solid #ccc;
+    position: relative;
+}
+
+figure {
+     text-align: center;
+	 border-radius: .5em;
+	 overflow-y: hidden;
+}
+
+figure a {
+	  text-decoration: none;
+	  text-transform: capitalize;
+}
+
+figure img {
+	  aspect-ratio: 4 / 2;
+	  object-fit: cover;
+}
+
+figcaption h3 {
+	  font-weight: 500;
+	  text-transform: capitalize;
 }

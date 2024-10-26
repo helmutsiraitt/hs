@@ -47,3 +47,10 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'euphoria_scriptregular';
+    src: url('../font/HenryMorganHand-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
