@@ -1,0 +1,78 @@
+section.contact {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  height: auto;
+	  padding-top: 2rem;
+}
+
+.contact h2 {
+	 width: 900px;
+	 max-width: 90%;
+	 font-family: 'Space Grotesk';
+	 font-weight: 500;
+	 font-variant: small-caps;
+	 text-transform: capitalize;
+}
+
+.contact p {
+	 width: 900px;
+	 max-width: 90%;
+	 font-family: 'Space Grotesk';
+	 font-weight: 300;
+	 margin-top: -7px;
+	 margin-bottom: 7px;
+
+
+}
+
+
+
+.contact-container {
+/*	  border: 1px solid black;*/
+	  display: grid;
+	  width: 900px;
+	  max-width: 90%;
+	  grid-template-columns: repeat(2, 1fr);
+	  grid-template-areas: 'name name'
+	                       'email email'
+	                       'message message'
+	                       'sendbtn sendbtn';
+	  gap: 10px;                     
+}
+
+form .name {
+	 grid-area: name;
+}
+
+form .email {
+	 grid-area: email;
+}
+
+form .message {
+	 grid-area: message;
+	 resize: none;
+
+}
+
+.form-control {
+	  padding: 0.375rem 0.75rem;
+	   background-color: rgba(0, 0, 0, 0.01);
+	   border: 1px solid #ced4da;
+	   background-clip: padding-box;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: rgba(0, 0, 0, 0.01);
+  border-color: #b4add3;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(105, 90, 166, 0.25);
+}
+
+
+.send {
+	  grid-area: sendbtn;
+/*	  border: 1px solid black;*/
+}

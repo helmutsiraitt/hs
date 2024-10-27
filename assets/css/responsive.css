@@ -118,4 +118,36 @@ section.portfolio {
     width: 30%;
 }
 
+/* blog */
+section.blog {
+      height: 100vh;
+/*      flex-direction: row;*/
+     padding-top: 0;
+}
+
+.blog h2 {
+     text-align: left;
+}
+
+.blog-container {
+   flex-direction: row;
+}
+
+.card {
+       width: 250px;
+}
+
+/* contact */
+section.contact {
+      height: 100vh;
+      padding-top: 0;
+}
+.contact-container {
+      grid-template-areas: 'name email'
+                           'message message'
+                           'sendbtn sendbtn';
+      gap: 10px;                     
+}
+
+
 }

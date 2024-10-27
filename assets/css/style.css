@@ -5,6 +5,7 @@
 @import url('font.css');
 @import url('portfolio.css');
 @import url('blog.css');
+@import url('contact.css');
 @import url('responsive.css');
 
 body {
@@ -27,7 +28,7 @@ section{
 	color: #fff;
 	padding: .4rem;
 	border-radius: 5px;
-	margin-left: 10px;
+/*	margin-left: 10px;*/
 }
 
 .btn:hover {
@@ -40,3 +41,18 @@ section{
 	 font-size: .8em;
 }
 
+footer {
+	  display: flex;
+	  justify-content: center;
+}
+
+.footer-container{
+	  border-top: 1px solid #dee2e6;
+	  width: 900px;
+	  max-width: 90%;
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-around;
+	  padding: 0.375rem 0.75rem;
+	  min-height: 70px;
+}

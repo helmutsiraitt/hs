@@ -3,6 +3,8 @@ section.blog {
 	  justify-content: center;
 	  align-items: center;
 	  flex-direction: column;
+	  height: auto;
+	  padding-top: 2rem;
 }
 
 .blog h2 {
@@ -11,6 +13,7 @@ section.blog {
 	 font-family: 'Space Grotesk';
 	 font-weight: 500;
 	 font-variant: small-caps;
+	 text-align: center;
 }
 
 .blog-container {
@@ -18,10 +21,14 @@ section.blog {
 	 max-width: 90%;
 	 display: flex;
 	 justify-content: space-between;
+	 flex-direction: column;
+	 align-items: center;
+	 gap: 10px;
+
 }
 
 .card {
-	   width: 250px;
+	   width: 100%;
 	   padding: 2rem;
 	   background-color: #ddd;
 }
