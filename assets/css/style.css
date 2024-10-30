@@ -9,9 +9,9 @@
 @import url('responsive.css');
 
 body {
-	  font: 1rem/1.5 'Space Grotesk', arial, sans-serif;
+	  font: 1rem/1.5 'Roboto', arial, sans-serif;
 	  background-color: #fbfbfb;
-	   font-weight: normal;
+	  font-weight: normal;
 }
 
 section{
@@ -26,9 +26,11 @@ section{
 	all: unset;
 	background-color: #337ab7;
 	color: #fff;
-	padding: .4rem;
+	padding: 0 1rem;
 	border-radius: 5px;
-/*	margin-left: 10px;*/
+	font-size: 14px;
+	height: 32px;
+	line-height: 32px;
 }
 
 .btn:hover {

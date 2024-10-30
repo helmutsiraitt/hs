@@ -1,7 +1,11 @@
 // hamburger menu
 const hamburger = document.querySelector('.hamburger-container');
+const menu = document.querySelector('nav ul');
+const body = document.querySelector('body');
 hamburger.addEventListener('click', function() {
      this.classList.toggle('active');
+     menu.classList.toggle('open-menu');
+     body.classList.toggle('bodyactive');
 });
 
 // smooth scrolling 
@@ -22,6 +26,10 @@ links.forEach(function(link) {
                  if(progress < duration) window.requestAnimationFrame(animation)
           }
            window.requestAnimationFrame(animation);
+          
+             hamburger.classList.toggle('active');
+             menu.classList.toggle('open-menu');    
+             body.classList.toggle('bodyactive');
      });
 });
 

@@ -9,10 +9,10 @@ section.portfolio {
 
 .portfolio h2 {
 	 text-transform: capitalize;
+	 font-size: 1.3rem;
 	 width: 900px;
 	 max-width: 90%;
-	 font-family: 'Space Grotesk';
-	 font-weight: 500;
+	 font-weight: normal;
 	 font-variant: small-caps;
 	 text-align: center;
 	 position: relative;

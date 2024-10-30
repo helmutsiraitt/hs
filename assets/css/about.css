@@ -10,11 +10,11 @@ section.about {
 
 .about h2 {
 	    text-transform: capitalize;
-	    font-size: 1.6rem; 
-	    width: 600px;
+	    font-size: 1.3rem; 
+	    width: 570px;
 	    max-width: 90%;
-	    font-family: 'Space Grotesk';
-	    font-weight: 500;
+	    font-family: 'Roboto';
+	    font-weight: normal;
 	    font-variant: small-caps;
 	    text-align: center;
 	    position: relative;

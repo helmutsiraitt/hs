@@ -1,56 +1,109 @@
-@font-face {
-    font-family: 'Space Grotesk';
-    src: url('../font/SpaceGrotesk-Light.woff') format('woff');
 
-    font-weight: 300;
+@font-face {
+    font-family: 'Alex Brush';
+    src: url('../font/AlexBrush-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Space Grotesk';
-     src: url('../font/SpaceGrotesk-Bold.woff') format('woff');
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Roboto';
+     src: url('../font/Roboto-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Space Grotesk';
-    src: url('../font/SpaceGrotesk-Medium.woff') format('woff');
+    font-family: 'Roboto';
+     src: url('../font/Roboto-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-BoldItalic.woff2') format('woff2'),
+        url('Roboto-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Italic.woff2') format('woff2'),
+        url('Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-MediumItalic.woff2') format('woff2'),
+        url('Roboto-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Space Grotesk';
-    src: url('../font/SpaceGrotesk-SemiBold.woff') format('woff'); 
+    font-family: 'Roboto';
+    src: url('Roboto-LightItalic.woff2') format('woff2'),
+        url('Roboto-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
 
-    font-weight: 600;
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Thin.woff') format('woff');
+    font-weight: 100;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Space Grotesk';
-    src: url('../font/SpaceGrotesk-Regular.woff') format('woff');
-   
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic.woff2') format('woff2'),
+        url('Roboto-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+     src: url('../font/Roboto-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'kioshima';
-    src: url('../font/KioshimaBold-Y9VO.ttf') format('truetype');
-   
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'euphoria_scriptregular';
-    src: url('../font/HenryMorganHand-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-display: swap;
 }
 
