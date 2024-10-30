@@ -72,6 +72,11 @@
 .about h2 {
          text-align: left;
 }
+
+.about h2::after {
+      left: 0;
+      margin: 0;
+}
    .about-content {
          flex-direction: row;   
 
@@ -105,6 +110,11 @@ section.portfolio {
      text-align: left;
 }
 
+.portfolio h2::after {
+      left: 0;
+      margin: 0;
+       width: 10%;
+}
 
 
 .portfolio-container {
@@ -133,6 +143,13 @@ section.blog {
    flex-direction: row;
 }
 
+.blog h2::after {
+      left: 0;
+      margin: 0;
+      width: 10%;
+}
+
+
 .card {
        width: 250px;
 }
@@ -145,7 +162,8 @@ section.contact {
 .contact-container {
       grid-template-areas: 'name email'
                            'message message'
-                           'sendbtn sendbtn';
+                           'sendbtn sendbtn'
+                           'msosial msosial';
       gap: 10px;                     
 }
 

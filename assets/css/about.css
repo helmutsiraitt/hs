@@ -2,7 +2,7 @@ section.about {
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
-	 column-gap: 10px;
+	 row-gap: 10px;
 	 flex-direction:column;
 	 padding: 1rem;
 	 height: auto;
@@ -17,6 +17,18 @@ section.about {
 	    font-weight: 500;
 	    font-variant: small-caps;
 	    text-align: center;
+	    position: relative;
+}
+
+.about h2::after {
+	   content: "";
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+	  width: 20%;
+	  border-bottom: 2px solid black;
 }
 
 .about-content {

@@ -18,7 +18,19 @@ section.skills {
 	  font-family: 'Space Grotesk';
 	  font-weight: 500;
 	  font-variant: small-caps;
+	  position: relative;
 } 
+
+.skills h2::after {
+	   content: "";
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+	  width: 20%;
+	  border-bottom: 2px solid black;
+}
 
 .skills p {
 	  width: 900px;

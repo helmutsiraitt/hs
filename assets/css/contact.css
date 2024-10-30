@@ -5,6 +5,7 @@ section.contact {
 	  align-items: center;
 	  height: auto;
 	  padding-top: 2rem;
+	  row-gap: 10px;
 }
 
 .contact h2 {
@@ -14,6 +15,18 @@ section.contact {
 	 font-weight: 500;
 	 font-variant: small-caps;
 	 text-transform: capitalize;
+	 position: relative;
+}
+
+.contact h2::after {
+	   content: "";
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+/*	  margin: auto;*/
+	  width: 10%;
+	  border-bottom: 2px solid black;
 }
 
 .contact p {
@@ -27,8 +40,6 @@ section.contact {
 
 }
 
-
-
 .contact-container {
 /*	  border: 1px solid black;*/
 	  display: grid;
@@ -38,8 +49,8 @@ section.contact {
 	  grid-template-areas: 'name name'
 	                       'email email'
 	                       'message message'
-	                       'sendbtn sendbtn';
-	  gap: 10px;                     
+	                       'sendbtn sendbtn'
+	                       'msosial msosial';                
 }
 
 form .name {
@@ -71,8 +82,18 @@ form .message {
   box-shadow: 0 0 0 0.2rem rgba(105, 90, 166, 0.25);
 }
 
-
 .send {
 	  grid-area: sendbtn;
-/*	  border: 1px solid black;*/
+	  display: grid;
+    place-items: center;
+}
+
+.sosial-media {
+	 grid-area: msosial;
+	 display: flex;
+	 justify-content: space-evenly;
+/*	 border: 1px solid black;*/
+	 padding: 0;
+	 width: 100%;
+	 margin-top: 1.5rem;
 }

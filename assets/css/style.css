@@ -41,6 +41,62 @@ section{
 	 font-size: .8em;
 }
 
+#back-to-top-btn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #fff;
+	outline: none;
+	width: 50px;
+	height: 50px;
+	border: 3px solid #333;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+	 background-color: #333;
+	 color: #fff;
+} 
+
+.btnEntrance {
+	 animation-duration: .5s;
+	 animation-fill-mode: both;
+	 animation-name: btnEntrance;
+}
+
+/* fadeInUp */
+@keyframes btnEntrance {
+	from {
+		 opacity: 0;
+		 transform: translate3d(0, 100%, 0);
+	}
+	to {
+		 opacity: 1;
+		 transform: translate3d(0, 0, 0); 
+	}
+}
+
+.btnExit {
+	 animation-duration: .25s;
+	 animation-fill-mode: both;
+	 animation-name: btnExit;
+}
+
+/*  fadeOutDown */
+@keyframes btnExit {
+	 from {
+           opacity: 1;
+	 }
+	 to {
+	 	 opacity: 0;
+	 	 transform: translate3d(0, 100%, 0);
+	 }
+}
+
+
+
 footer {
 	  display: flex;
 	  justify-content: center;

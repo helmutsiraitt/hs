@@ -4,6 +4,7 @@ section.portfolio {
 	 justify-content: center;
 	 align-items: center;
 	 height: auto;
+	 row-gap: 10px;
 }
 
 .portfolio h2 {
@@ -14,6 +15,18 @@ section.portfolio {
 	 font-weight: 500;
 	 font-variant: small-caps;
 	 text-align: center;
+	 position: relative;
+}
+
+.portfolio h2::after {
+	   content: "";
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+	  width: 20%;
+	  border-bottom: 2px solid black;
 }
 
 .portfolio-container {

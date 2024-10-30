@@ -29,16 +29,40 @@ nav ul {
     width: 30%;
      font-family: 'Space Grotesk';
      font-weight: 500;
+/*     border: 1px solid black;*/
+      box-sizing: border-box;
+/*      overflow: hidden;*/
 }
 
 nav ul li{
+/*     border: 1px solid black;*/
 	  list-style: none;
 }
 
 nav ul li a {
+/*     border: 1px solid blue;*/
+	  display: block;
 	  color: #000;
+	  position: relative;
 }
 
+nav ul li a::before {
+	 content: '';
+	 position: absolute;
+	 width: 0;
+	 height: 3px;
+	 left: 0;
+     bottom: -2.5px;
+     background: #dedede;
+    transition: width .30s;
+}
+
+nav ul li a:hover::before{
+	  content: '';
+	  width: 100%;
+}
+
+/* hamburger menu */
 .hamburger-container {
 /*  border: 1px solid black;*/
   cursor: pointer;
@@ -101,7 +125,9 @@ nav ul li a {
 	 align-items: center;
 	 justify-content: center;
 	 padding: 1rem;
-	 background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7))   ,url('../images/bg.png');
+/*	 background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7))   ,url('../images/bg.png');*/
+		   	  background-image: linear-gradient(225deg, #eae7e7 20%, #dedede 20% 50%, #e5e4e2 50% 80%, #dcdcdc 80%);
+
 	 background-size: cover;
 	 background-position: center;
 	 background-repeat: no-repeat;
