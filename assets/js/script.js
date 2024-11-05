@@ -1,18 +1,43 @@
-// hamburger menu
+const links = document.querySelectorAll('nav a');
 const hamburger = document.querySelector('.hamburger-container');
 const menu = document.querySelector('nav ul');
 const body = document.querySelector('body');
+const loader = document.querySelector('.loader');
+
+// loader 
+ window.addEventListener('load', function() {
+                 setTimeout(function(){
+                 loader.classList.add('loader--hidden');
+                 loader.addEventListener('transitionend', function() {
+                    body.removeChild(body.firstChild)
+                  });
+                 body.classList.add('activeScroll');
+                 }, 2000);
+          });
+
+
+
+
+// hamburger menu
 hamburger.addEventListener('click', function() {
-     this.classList.toggle('active');
-     menu.classList.toggle('open-menu');
-     body.classList.toggle('bodyactive');
+     hamburger.classList.add('active');
+     menu.classList.add('open-menu');
+     body.classList.add('bodyactive');
+     
+     links.forEach(function(link){
+          link.addEventListener('click', function() {            
+             hamburger.classList.remove('active');
+             menu.classList.remove('open-menu');    
+             body.classList.remove('bodyactive');
+          });
+     });
+     
 });
 
 // smooth scrolling 
-const links = document.querySelectorAll('nav a');
 links.forEach(function(link) {
      link.addEventListener('click', function(e) {
-           event.preventDefault();
+           e.preventDefault();
           const elemen = e.currentTarget.getAttribute('href') === '#' ? 'header' : e.currentTarget.getAttribute('href');
           const targetPosition = document.querySelector(elemen).offsetTop;
           const startPosition = window.pageYOffset;
@@ -26,10 +51,6 @@ links.forEach(function(link) {
                  if(progress < duration) window.requestAnimationFrame(animation)
           }
            window.requestAnimationFrame(animation);
-          
-             hamburger.classList.toggle('active');
-             menu.classList.toggle('open-menu');    
-             body.classList.toggle('bodyactive');
      });
 });
 

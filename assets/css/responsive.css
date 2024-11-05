@@ -49,14 +49,14 @@
 /* Navigation */
     nav ul{
         display: flex; 
-         justify-content: space-around;
-       
+        justify-content: space-around;
         position: relative;
         left: 0;
         top: 0;
-          width: 30%;
-          height: auto;
-          flex-direction: row;
+        width: 30%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
     }
 
     .hamburger-container {
@@ -87,6 +87,7 @@
 }
    .about-content {
          flex-direction: row;   
+         padding: 0;
 
    }
    .thumb-profile {
@@ -101,15 +102,26 @@
         width: 30ch;
  }
 
+
+
+
+
 /* skills  */
-  .skills h2 {
+ section.skills {
+       padding: 0;
+}
+
+.skills h2 {
       text-align: center;     
  } 
 
- .skill-container {
+.skill-container {
     flex-direction: row;
 }
 
+.skills p {
+      padding: 0;
+}
 
 
 /* portfolio */
@@ -176,6 +188,12 @@ section.contact {
                            'sendbtn sendbtn'
                            'msosial msosial';
       gap: 10px;                     
+}
+
+#back-to-top-btn {
+    width: 50px;
+    height: 50px;
+/*    background-color: #fff;*/
 }
 
 

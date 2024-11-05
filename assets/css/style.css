@@ -9,9 +9,14 @@
 @import url('responsive.css');
 
 body {
-	  font: 1rem/1.5 'Roboto', arial, sans-serif;
+	  font: 1rem/1.6 'Roboto', arial, sans-serif;
 	  background-color: #fbfbfb;
 	  font-weight: normal;
+	  overflow: hidden;
+}
+
+.activeScroll {
+      overflow: inherit;
 }
 
 section{
@@ -19,11 +24,46 @@ section{
 /*	  border: 1px solid black;*/
 }
 
+.loader {
+	 	     position: fixed;
+        	 top: 0;
+        	 left: 0;
+        	 width: 100vw;
+        	 height: 100vh;
+        	 display: flex;
+        	 align-items: center;
+        	 justify-content: center;
+        	 background-color: #333;
+		     transition: opacity .75s, visibility .75s;
+		     z-index: 999;
+}
+
+  .loader::after {
+        	  content: "";
+        	  width: 75px;
+        	  height: 75px;
+        	  border: 15px solid #ddd;
+        	  border-top-color: #009578;
+        	  border-radius: 50%;
+        	  animation: loading .75s ease infinite;
+        }
+
+				@keyframes loading {
+					   from { transform: rotate(0turn); }
+					   to { transform: rotate(1turn); }
+				}
+     
+      .loader--hidden {
+					opacity: 0;
+					visibility: hidden;
+
+				 }
+
 .btn {
-	/*border: 0;
-	outline: 0;
-	font-family: sans-serif;*/
-	all: unset;
+	 border: 0;
+	/* outline: 0; */
+	font-family: sans-serif;
+	/* all: unset; */
 	background-color: #337ab7;
 	color: #fff;
 	padding: 0 1rem;
@@ -31,6 +71,7 @@ section{
 	font-size: 14px;
 	height: 32px;
 	line-height: 32px;
+	text-decoration: none;
 }
 
 .btn:hover {
@@ -48,19 +89,26 @@ section{
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	background-color: #fff;
 	outline: none;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	border: 3px solid #333;
 	border-radius: 50%;
 	cursor: pointer;
 }
+#back-to-top-btn, svg {
+	  fill: #000000;
+}
 
 #back-to-top-btn:hover, #back-to-top-btn:focus {
-	 background-color: #333;
-	 color: #fff;
+	 background-color: #000;
+	 color: white;
 } 
+
+#back-to-top-btn svg:hover {
+	  fill: #fff;
+}
+
 
 .btnEntrance {
 	 animation-duration: .5s;

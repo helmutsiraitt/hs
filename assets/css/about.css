@@ -8,10 +8,21 @@ section.about {
 	 height: auto;
 }
 
+.about-content {
+          width: 900px;
+	    max-width: 90%;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    gap: 5px;
+/*	    border: 1px solid black;*/
+            padding: 0 1.6rem;
+}
+
 .about h2 {
 	    text-transform: capitalize;
 	    font-size: 1.3rem; 
-	    width: 570px;
+	    width: 605px;
 	    max-width: 90%;
 	    font-family: 'Roboto';
 	    font-weight: normal;
@@ -31,15 +42,7 @@ section.about {
 	  border-bottom: 2px solid black;
 }
 
-.about-content {
-        width: 900px;
-	    max-width: 90%;
-	    display: flex;
-	    flex-direction: column;
-	    justify-content: center;
-	    gap: 5px;
-/*	    border: 1px solid black;*/
-}
+
 
 .thumb-profile {
 /*	  border: 1px solid black;*/
@@ -48,14 +51,17 @@ section.about {
 }
 
 .thumb-profile img {
-     aspect-ratio:2 / 2;
-     object-fit: contain;
+	  width: 100%;
+       aspect-ratio:1 / 1;
+       height: 100%;
+       object-fit: cover;
 }
 
 .about p {
-	    align-self: center;
+/*	    align-self: center;*/
 /*	    width: 35ch;*/
 /*	    height: 100%;*/
+        text-align: justify;
 	    width: 100%;
 /*        border: 1px solid black;*/
 }
