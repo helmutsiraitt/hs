@@ -4,6 +4,7 @@ const menu = document.querySelector('nav ul');
 const body = document.querySelector('body');
 const loader = document.querySelector('.loader');
 
+
 // loader 
  window.addEventListener('load', function() {
                  setTimeout(function(){
@@ -103,3 +104,4 @@ function easeInOutQuad(t, b, c, d){
       t--;
       return -c/2 * (t*(t-2) - 1) +b;
 };
+

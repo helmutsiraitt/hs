@@ -229,12 +229,12 @@
         <section id="contact" class="contact">
             <h2>contact</h2>
             <p>interested to work together? let's talk</p>
-            <form class="contact-container">
-                <input type="text" placeholder="Your Name" class="name form-control">
-                <input type="email" placeholder="example@gmail.com" class="email form-control">
-                <textarea rows="6" placeholder="Write Something" class="message form-control"></textarea>
+            <form class="contact-container" method="post" action="https://formspree.io/f/xeoqkozo" autocomplete="off">
+                <input type="text" placeholder="Your Name" class="name form-control" name="name" required >
+                <input type="email" placeholder="example@gmail.com" class="email form-control" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" name="email">
+                <textarea rows="6" placeholder="Write Something" class="message form-control" name="message" required></textarea>
                 <div class="send">
-                    <button class="btn">send message</button>
+                    <button class="btn" type="submit">send message</button>
                 </div>
                 <div class="sosial-media">
                     <a href="#"><img src="./assets/images/icon/facebook.svg" alt=""></a>

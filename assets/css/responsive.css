@@ -144,6 +144,7 @@ section.portfolio {
      justify-content: space-between;
      flex-wrap: wrap;
      flex-direction: row;
+     padding: 0;
   }
 
   .project {
@@ -164,6 +165,7 @@ section.blog {
 
 .blog-container {
    flex-direction: row;
+   padding: 0;
 }
 
 .blog h2::after {
@@ -179,21 +181,38 @@ section.blog {
 
 /* contact */
 section.contact {
-      height: 100vh;
+/*      height: 100vh;*/
       padding-top: 0;
 }
 .contact-container {
       grid-template-areas: 'name email'
                            'message message'
                            'sendbtn sendbtn'
-                           'msosial msosial';
-      gap: 10px;                     
+                           'msosial msosial';       
+      padding: 0;             
+}
+
+.contact h2 {
+     text-align: left;
+}
+
+.contact h2::after {
+      margin: 0 auto 0 0;
+      width: 10%;
+}
+
+.contact p {
+     text-align: left;
+}
+
+.send {
+     display: grid;
+     place-items: start;
 }
 
 #back-to-top-btn {
     width: 50px;
     height: 50px;
-/*    background-color: #fff;*/
 }
 
 
